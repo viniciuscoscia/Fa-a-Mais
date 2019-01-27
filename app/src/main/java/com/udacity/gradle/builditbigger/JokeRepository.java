@@ -43,7 +43,7 @@ public class JokeRepository extends AsyncTask<Void, String, String> {
             return myApiService.tellJoke().execute().getData();
         } catch (IOException e) {
             Log.e("ERRO", e.toString());
-            return "Deu pra carregar a piada não :/";
+            return null;
         }
     }
 
