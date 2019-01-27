@@ -53,8 +53,8 @@ android {
 
     testOptions {
         unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
     }
-
     sourceSets { main { java.srcDirs = ['src/main/java', 'src/test/java'] } }
 }
 
